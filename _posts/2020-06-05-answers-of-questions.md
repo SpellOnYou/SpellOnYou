@@ -57,6 +57,37 @@ Modern[^3] electronic circuit
 3. **hidd** related to keyboard&mouse, you can kill using Activity Monitor. But if that persists, maybe it related with your third party input device(it was my case..), or softwares which enables you to customize keybindings.
 4. **kernel_task** well, this was the most tricky thing. Because kernel is essential to any kind of os. Apple says it's okay (if it occupies much cpu even rather doing the job you ran...?) Because it's for managing your mac, and mainly to preventing from overheating... so... don't worry (or restart)
 
+Python
+---
+### Q. I want to get all subdirectory/file in path
+- pathlib method
+	- `pathlib.Path(path).glob("*/**")` gets all nested file/dir.
+
+### Q. I want to copy / remove / delete file using pathlib
+
+- copy
+
+```
+with destination.open(mode='xb') as fid:
+    fid.write(source.read_bytes())
+```
+
+- move
+
+```
+if not destination.exists():
+    source.replace(destination)
+```
+
+- delete
+
+`path.rmdir()` and `path.unlink()`
+
+
+### Q. copy directory including all the contents in it.
+- distutils library
+	- `distutils.dir_util.copy_tree(src_directory, trg_directory)`	
+
 ---
 
 [^1]: H. Jackson and E. Amvela, *Words, Meaning and Vocabulary: An Introduction to Modern English Lexicology*, Bloomsbury Publishing, 2007.
