@@ -5,10 +5,9 @@ node_modules
 Gemfile.lock
 
 # ---dionne
-_soonUpLoad/*
 how to wirte a note
 _?.md
 _site/*
 .DS_Store
-assets/images/profile/*
+unstaged/
 **/.ipynb_checkpoints/

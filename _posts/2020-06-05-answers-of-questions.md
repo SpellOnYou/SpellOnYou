@@ -86,7 +86,18 @@ if not destination.exists():
 
 ### Q. copy directory including all the contents in it.
 - distutils library
-	- `distutils.dir_util.copy_tree(src_directory, trg_directory)`	
+	- `distutils.dir_util.copy_tree(src_directory, trg_directory)`
+
+### unzip and archive folder
+
+- unarchive zip file
+
+```
+with ZipFile(f_path, 'r') as arc:
+    arc.extractall(trg)
+```
+- archive
+	- `shutil.make_archive(base_name, format, ..)`
 
 ---
 
