@@ -99,6 +99,12 @@ with ZipFile(f_path, 'r') as arc:
 - archive
 	- `shutil.make_archive(base_name, format, ..)`
 
+### Q. zero padding
+
+```
+tmp, int(tmp),  str(int(tmp)).zfill(4), f"{int(tmp):04d}", f"{int(tmp):04}"
+```
+
 ---
 
 [^1]: H. Jackson and E. Amvela, *Words, Meaning and Vocabulary: An Introduction to Modern English Lexicology*, Bloomsbury Publishing, 2007.

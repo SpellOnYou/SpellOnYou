@@ -57,7 +57,12 @@ reference git pro document
 ### Data format
 
 - Pickle: Usually saved with numpy format. is it required? 
-- ZIP, GZIP, etc. many formats compress data
+- ZIP, GZIP, 7z etc. many formats compress data
+	- What does 'entries' mean in zip file?
+	- when I zip list recursively (i.e. -r option) in command, I want to zip one parent containing contents (i.e. I'm in `/usr` and target archive files are only in`/usr/root/sys/`. How can I archive subdirectory of final path (i.e.`sys/`) without compressing other previous directory?
+
+
+
 
 —-
 
